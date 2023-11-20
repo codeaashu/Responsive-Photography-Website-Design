@@ -1,0 +1,345 @@
+/* ===( CODE AASHU )=== */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;800;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100vh;
+    background: #f9faff;
+    font-family: "Poppins", sans-serif;
+    color: #25282b;
+}
+
+main{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    background: #f9faff;
+    padding: 2rem 5rem;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.05);
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+}
+
+header nav a:hover{
+    color: #fdc435;
+}
+
+.container{
+    width: calc(100% - 10rem);
+    margin: 0 auto;
+}
+
+.landing{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-text h4{
+    color: #fdc435;
+    text-shadow: 0 0 0.1 rgba(0,0,0,0.2);
+}
+
+h2{
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 1.5rem;
+    font-size: 5rem;
+}
+
+.landing-text{
+    width: 90%;
+}
+
+.landing-text h2{
+    max-width: 15ch;
+}
+
+.landing-text p{
+    opacity: 0.7;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    max-width: 60ch;
+}
+
+.landing-text .btn{
+    margin-right: 1rem;
+}
+
+.landing-img{
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top: 5rem;
+    right: 0;
+}
+
+.landing-img img{
+    width: 110%;
+    height: 110%;
+    padding-right: 20%;
+    padding-left: 24%;
+    padding-top: 3%;
+    object-fit: cover;
+    transform: scale(1.2);
+}
+
+.about, .project, .contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.about-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text{
+    width: 100%;
+}
+
+.about-text p{
+    opacity: 0.7;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+}
+
+.about-img{
+    width: 100%;
+}
+
+.about-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-control{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    gap: 1rem;
+}
+
+.f-control input, .f-control textarea{
+    padding: 1rem 1.8rem;
+    width: 60rem;
+    max-width: calc(100vw - 3rem);
+    border: 0.2rem solid #e8ecf4;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.f-control textarea{
+    resize: none;
+    height: 20rem;
+}
+
+.contact form button{
+    margin-right: auto;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 0;
+}
+
+footer .social-media{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: #25282b;
+}
+
+/* Heading */
+
+.heading{
+    font-size: 3.5rem;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 600;
+}
+
+.bar{
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.bar::after{
+    content: "";
+    width: 90%;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background: #fdc435;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+
+.btn{
+    font-family: inherit;
+    outline: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-1{
+    background: #fdc435;
+    border: 0.2rem solid #fdc435;
+    border-radius: 0.5rem;
+}
+
+.btn-2{
+    background: #f9faff;
+    border: 0.2rem solid #25282b;
+    border-radius: 0.5rem;
+}
+
+.btn-3{
+    background: #f9faff;
+    border: 0.2rem solid #25282b;
+    border-radius: 3rem;
+}
+
+/* Card */
+
+.card{
+    width: 90%;
+    max-width: 100rem;
+    height: 40rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    background: #fff;
+    margin: 4rem 0;
+    box-shadow: -0.5rem 0.5rem 3rem rgba(0,0,0,0.05);
+}
+
+.card-text .heading{
+    margin-bottom: 1rem;
+}
+
+.card-text{
+    width: 100%;
+    line-height: 1.5;
+    padding: 0 4rem;
+}
+
+.card-text .btn{
+    margin-top: 2rem;
+}
+
+.card-img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-img img{
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.card.reverse{
+    flex-direction: row-reverse;
+    box-shadow: 0.5rem 0.5rem 3rem rgba(0,0,0,0.05);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 58%;
+    }
+    .container{
+        width: calc(100% - 3rem);
+    }
+    .landing-text p{
+        line-height: 2;
+        word-spacing: 1rem;
+    }
+    .landing-img{
+        /* display: none; */
+        width: 30%;
+        height: 25%;
+        padding-right: 20%;
+        padding-left: 24%;
+        padding-top: 3%;
+        object-fit: cover;
+        transform: scale(1.2);
+        /* overflow: hidden; */
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .card,.card.reverse{
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+        box-shadow: 0.5rem 0.5rem 3rem rgba(0,0,0,0.05), -0.5rem -0.5rem 3rem rgba(0,0,0,0.05);
+    }
+    .card-img{
+        height: 25rem;
+        overflow: hidden;
+    }
+    .card .card-text{
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    header{
+        padding: 2rem;
+    }
+}
